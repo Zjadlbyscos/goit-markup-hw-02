@@ -20,7 +20,8 @@
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: #757575;}
-
+.mail-header:hover,.tel-header:hover{color:#2196F3}
+.mail-header:focus,.tel-header:focus{color:#2196F3}
 /*Style Studio.html; fonts*/
 .slogan{font-weight: 900;
     font-size: 44px;
@@ -141,3 +142,6 @@
         letter-spacing: 0.03em;
         color: #FFFFFF;background: #2F303A
     }
+    
+    .address-footer:hover,.mail-footer:hover,.tel-footer:hover{color:#2196F3}
+    .address-footer:focus,.mail-footer:focus,.tel-footer:focus{color:#2196F3}
