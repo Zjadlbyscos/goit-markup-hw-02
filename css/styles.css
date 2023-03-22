@@ -7,7 +7,6 @@
   color: #2196f3;
 }
 .nav {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -20,7 +19,6 @@
 }
 .mail-header,
 .tel-header {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
