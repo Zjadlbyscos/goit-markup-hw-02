@@ -1,19 +1,17 @@
-/*
 :root {
-  --background-page-color: #e5e5e5;
   --brand-color-blue: #2196f3;
-  --brand-color-light-black: #212121;
-  --brand-color-grey: #757575;
+  --brand-color-text-black: #212121;
   --brand-color-white: #ffffff;
-  --brand-color-black: #000000;
-  --brand-color-background: #2f303a;
-  --brand-color-background-border: #eeeeee;
+  --brand-color-grey: #757575;
+  --brand-color-background-darc: #2f303a;
   --brand-color-background-team: #f5f4fa;
+  --brand-color-background: #2f303a;
+  --background-page-color: #e5e5e5;
 }
-*/
+
 body {
   font-family: "Roboto", sans-serif;
-  color: #212121;
+  color: var(--brand-color-text-black);
   font-weight: 400;
   font-size: 16px;
 }
@@ -24,20 +22,27 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
-.logo-blue{
-  color:#2196f3;
+.logo-blue {
+  color: var(--brand-color-blue);
+}
+.logo-darc {
+  color: var(--brand-color-text-black);
+}
+.logo-bright {
+  color: var(--brand-color-white);
 }
 .nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--brand-color-text-black);
 }
 .nav:hover,
 .nav:focus {
-  color: #2196f3;
+  color: var(--brand-color-blue);
 }
 .mail-header,
 .tel-header {
@@ -45,15 +50,15 @@ body {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--brand-color-grey);
 }
 .mail-header:hover,
 .tel-header:hover {
-  color: #2196f3;
+  color: var(--brand-color-blue);
 }
 .mail-header:focus,
 .tel-header:focus {
-  color: #2196f3;
+  color: var(--brand-color-blue);
 }
 /*Style Studio.html; fonts*/
 .slogan {
@@ -63,8 +68,8 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
-  background: #2f303a;
+  color: var(--brand-color-white);
+  background: var(--brand-color-background-darc);
 }
 
 .atuty-title {
@@ -78,7 +83,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--brand-color-grey);
 }
 .section-title {
   font-weight: 700;
@@ -100,12 +105,12 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--brand-color-grey);
 }
 /*Style buttons*/
 
 .button {
-  background-color: #f5f4fa;
+  background-color: var(--brand-color-background-team);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -115,16 +120,16 @@ body {
 }
 .button:hover,
 .button:focus {
-  background-color: #2196f3;
+  background-color: var(--brand-color-blue);
   border-radius: 4px;
-  color: #ffffff;
+  color: var(--brand-color-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
 
 .order-service {
-  background: #2196f3;
+  background: var(--brand-color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
@@ -134,51 +139,11 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-}
-
-.all-kind {
-  position: absolute;
-  width: 121px;
-  height: 38px;
-  left: 510px;
-  top: 174px;
-}
-
-.pages {
-  position: absolute;
-  width: 93px;
-  height: 38px;
-  left: 639px;
-  top: 174px;
-}
-.aplications {
-  position: absolute;
-  width: 114px;
-  height: 38px;
-  left: 740px;
-  top: 174px;
-}
-
-.design {
-  position: absolute;
-  width: 91px;
-  height: 38px;
-  left: 862px;
-  top: 174px;
-}
-
-.marketing {
-  position: absolute;
-  width: 121px;
-  height: 38px;
-  left: 961px;
-  top: 174px;
+  color: var(--brand-color-white);
 }
 
 /*tu style galerii portfolio*/
 .project-title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -187,7 +152,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--brand-color-grey);
 }
 /*footer styles*/
 .mail-footer {
@@ -196,30 +161,30 @@ body {
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: rgba(255, 255, 255, 0.6);
-  background: #2f303a;
 }
 .tel-footer {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  background: #2f303a;
 }
 .address-footer {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: #ffffff;
-  background: #2f303a;
+  color: var(--brand-color-white);
 }
 
 .address-footer:hover,
 .mail-footer:hover,
 .tel-footer:hover {
-  color: #2196f3;
+  color: var(--brand-color-blue);
 }
 .address-footer:focus,
 .mail-footer:focus,
 .tel-footer:focus {
-  color: #2196f3;
+  color: var(--brand-color-blue);
+}
+.footer {
+  background-color: var(--brand-color-background-darc);
 }
